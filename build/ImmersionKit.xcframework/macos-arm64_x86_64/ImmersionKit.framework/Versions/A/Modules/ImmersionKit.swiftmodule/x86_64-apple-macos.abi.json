@@ -1,0 +1,21 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "ImmersionKit",
+    "printedName": "ImmersionKit",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "ImmersionKitCore",
+        "printedName": "ImmersionKitCore",
+        "declKind": "Import",
+        "moduleName": "ImmersionKit",
+        "declAttributes": [
+          "Exported"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}
