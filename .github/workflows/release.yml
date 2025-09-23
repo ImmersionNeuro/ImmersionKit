@@ -38,49 +38,49 @@ jobs:
           xcodebuild archive -scheme "$SCHEME" -configuration "$CONFIG" \
             -destination "generic/platform=iOS" \
             -archivePath "$BUILD_DIR/ios" \
-            SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES CODE_SIGNING_ALLOWED=NO
+            SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES CODE_SIGNING_ALLOWED=NO OTHER_SWIFT_FLAGS="-no-verify-emitted-module-interface"
 
       - name: Archive (iOS Simulator)
         run: |
           xcodebuild archive -scheme "$SCHEME" -configuration "$CONFIG" \
             -destination "generic/platform=iOS Simulator" \
             -archivePath "$BUILD_DIR/ios-sim" \
-            SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES CODE_SIGNING_ALLOWED=NO
+            SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES CODE_SIGNING_ALLOWED=NO OTHER_SWIFT_FLAGS="-no-verify-emitted-module-interface"
 
       - name: Archive (macOS)
         run: |
           xcodebuild archive -scheme "$SCHEME" -configuration "$CONFIG" \
             -destination "generic/platform=macOS" \
             -archivePath "$BUILD_DIR/macos" \
-            SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES CODE_SIGNING_ALLOWED=NO
+            SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES CODE_SIGNING_ALLOWED=NO OTHER_SWIFT_FLAGS="-no-verify-emitted-module-interface"
 
       - name: Archive (tvOS)
         run: |
           xcodebuild archive -scheme "$SCHEME" -configuration "$CONFIG" \
             -destination "generic/platform=tvOS" \
             -archivePath "$BUILD_DIR/tvos" \
-            SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES CODE_SIGNING_ALLOWED=NO
+            SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES CODE_SIGNING_ALLOWED=NO OTHER_SWIFT_FLAGS="-no-verify-emitted-module-interface"
 
       - name: Archive (tvOS Simulator)
         run: |
           xcodebuild archive -scheme "$SCHEME" -configuration "$CONFIG" \
             -destination "generic/platform=tvOS Simulator" \
             -archivePath "$BUILD_DIR/tvos-sim" \
-            SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES CODE_SIGNING_ALLOWED=NO
+            SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES CODE_SIGNING_ALLOWED=NO OTHER_SWIFT_FLAGS="-no-verify-emitted-module-interface"
 
       - name: Archive (watchOS)
         run: |
           xcodebuild archive -scheme "$SCHEME" -configuration "$CONFIG" \
             -destination "generic/platform=watchOS" \
             -archivePath "$BUILD_DIR/watchos" \
-            SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES CODE_SIGNING_ALLOWED=NO
+            SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES CODE_SIGNING_ALLOWED=NO OTHER_SWIFT_FLAGS="-no-verify-emitted-module-interface"
 
       - name: Archive (watchOS Simulator)
         run: |
           xcodebuild archive -scheme "$SCHEME" -configuration "$CONFIG" \
             -destination "generic/platform=watchOS Simulator" \
             -archivePath "$BUILD_DIR/watchos-sim" \
-            SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES CODE_SIGNING_ALLOWED=NO
+            SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES CODE_SIGNING_ALLOWED=NO OTHER_SWIFT_FLAGS="-no-verify-emitted-module-interface"
 
       - name: Create XCFramework
         run: |
