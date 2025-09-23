@@ -23,7 +23,7 @@ let package = Package(
         // .package(url: "https://github.com/apple/swift-log", from: "1.5.0")
 	.package(
             url: "https://github.com/influxdata/influxdb-client-swift.git",
-            from: "1.31.0" // adjust to latest stable
+            from: "1.7.0" // adjust to latest stable
         )
     ],
     targets: [
