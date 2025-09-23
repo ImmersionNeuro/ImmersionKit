@@ -1,0 +1,4 @@
+# never commit build outputs here
+build/
+*.xcframework
+*.xcframework.zip
