@@ -32,11 +32,17 @@ let package = Package(
         .target(
             name: "ImmersionKit",
             dependencies: [
-                // "Logging",  // Example if you added swift-log
-		.product(name: "InfluxDBSwift", package: "influxdb-client-swift"),
-                .product(name: "InfluxDBSwiftApis", package: "influxdb-client-swift")
+                .product(
+                    name: "InfluxDBSwift",
+                    package: "influxdb-client-swift",
+                    condition: .when(platforms: [.iOS, .macOS, .tvOS])
+                ),
+                .product(
+                    name: "InfluxDBSwiftApis",
+                    package: "influxdb-client-swift",
+                    condition: .when(platforms: [.iOS, .macOS, .tvOS])
+                ),
             ],
-            path: "Sources/ImmersionKit",
             resources: [
                 // .process("Resources") // If you add bundled assets later
             ],
@@ -46,8 +52,7 @@ let package = Package(
         ),
         .testTarget(
             name: "ImmersionKitTests",
-            dependencies: ["ImmersionKit"],
-            path: "Tests/ImmersionKitTests"
+            dependencies: ["ImmersionKit"]
         ),
     ]
 )
