@@ -21,11 +21,11 @@ let package = Package(
     dependencies: [
         // Add external packages here as needed, e.g.:
         // .package(url: "https://github.com/apple/swift-log", from: "1.5.0")
-	.package(
-            url: "https://github.com/influxdata/influxdb-client-swift.git",
-            from: "1.7.0" // adjust to latest stable
-        ),
-    .package(url: "https://github.com/apple/swift-log.git", exact: "1.6.4")
+	//.package(
+    //        url: "https://github.com/influxdata/influxdb-client-swift.git",
+    //        from: "1.7.0" // adjust to latest stable
+    //    ),
+    //.package(url: "https://github.com/apple/swift-log.git", exact: "1.6.4")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -33,18 +33,18 @@ let package = Package(
         .target(
             name: "ImmersionKit",
             dependencies: [
-                .product(
-                    name: "InfluxDBSwift",
-                    package: "influxdb-client-swift",
-                    condition: .when(platforms: [.iOS, .macOS, .tvOS])
-                ),
-                .product(
-                    name: "InfluxDBSwiftApis",
-                    package: "influxdb-client-swift",
-                    condition: .when(platforms: [.iOS, .macOS, .tvOS])
-                ),
-                .product(name: "Logging", package: "swift-log",
-                                         condition: .when(platforms: [.iOS, .macOS, .tvOS]))
+       //         .product(
+       //             name: "InfluxDBSwift",
+       //             package: "influxdb-client-swift",
+       //             condition: .when(platforms: [.iOS, .macOS, .tvOS])
+       //         ),
+       //         .product(
+       //             name: "InfluxDBSwiftApis",
+       //             package: "influxdb-client-swift",
+       //             condition: .when(platforms: [.iOS, .macOS, .tvOS])
+       //         ),
+       //         .product(name: "Logging", package: "swift-log",
+       //                                  condition: .when(platforms: [.iOS, .macOS, .tvOS]))
             ],
             resources: [
                 // .process("Resources") // If you add bundled assets later
