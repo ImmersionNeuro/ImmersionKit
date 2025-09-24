@@ -4,7 +4,10 @@ import PackageDescription
 let package = Package(
     name: "ImmersionKit",
     platforms: [
-        .iOS(.v17)
+        .iOS(.v17),
+        .tvOS(.v17),
+        .watchOS(.v10),
+        .macOS(.v15)
     ],
     products: [
         .library(name: "ImmersionKit", targets: ["ImmersionKit"])
@@ -12,8 +15,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "ImmersionKit",
-            url: "https://github.com/ImmersionNeuro/ImmersionKit/releases/download/v0.0.50/ImmersionKit.xcframework.zip",
-            checksum: "400f7060b041a5250cd12992411bb0735a788ec344d8d9295e2e21aba3531e2f"
+            url: "https://github.com/ImmersionNeuro/ImmersionKit/releases/download/v0.0.52/ImmersionKit.xcframework.zip",
+            checksum: "e93d44b2bde3ffe5d176a4cfceaa0c64c237497ab903bd21d138f156c5e5ef2c"
         )
     ]
 )
