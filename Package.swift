@@ -1,4 +1,4 @@
-// swift-tools-version: 5.9
+// swift-tools-version: 6.0
 import PackageDescription
 
 let package = Package(
@@ -10,13 +10,13 @@ let package = Package(
         .macOS(.v15)
     ],
     products: [
-               .library(name: "ImmersionKit", targets: ["ImmersionKit"])
+        .library(name: "ImmersionKit", targets: ["ImmersionKit"])
     ],
     targets: [
-              .binaryTarget(
-                            name: "ImmersionKit",
-                  url: "https://github.com/ImmersionNeuro/ImmersionKit/releases/download/v0.0.57/ImmersionKit.xcframework.zip",
-                  checksum: "17d4e68de44bf7df13602ff502646a4078e92d4f0f8233c34d81e0565cd8227f"
-              )
+        .binaryTarget(
+            name: "ImmersionKit",
+            url: "https://github.com/ImmersionNeuro/ImmersionKit/releases/download/v0.0.58/ImmersionKit.xcframework.zip",
+            checksum: "d21bc0c63c7ec56e11abd662e3ddd62270fe8cee89bc6d13045aedb8bb1e3244"
+        )
     ]
 )
