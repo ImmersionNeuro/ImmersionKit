@@ -1,6 +1,6 @@
 # ImmersionKit
 
-ImmersionKit is a lightweight, on-device SDK for computing “Immersion” and “Safety” indices from raw datapoints (e.g., heart rate), storing time-series locally, and querying/deriving **Key Moments**. It’s built for privacy-first apps: data is processed and stored **on device** (Pro), with optional cloud sync you control.
+ImmersionKit is a lightweight, on-device SDK for **VALUE MEASUREMENT** -- computing “Value” and “Psychological Safety” indices from raw datapoints, storing time-series locally, and querying/deriving **Key Moments**. It’s built for privacy-first apps: data is processed and stored **on device**.  No personal information or health data is saved, stored, or transmitted by this SDK.
 
 Visit [Immersion Neuroscience](https://getimmersion.com) for more details.
 
@@ -31,7 +31,7 @@ Visit [Immersion Neuroscience](https://getimmersion.com) for more details.
 - 🗃️ **Local time-series store** (Pro): SwiftData buckets at 1s, 1m, 5m, 15m, 1h, 1d.
 - 🔎 **Query by aggregation** (Pro): return per-bucket series with count-weighted merges.
 - ⭐ **Key Moments** (Pro): detect sustained high/low engagement segments per identity.
-- 🔐 **Privacy-first**: data stays on device; you decide if/when to sync.
+- 🔐 **Privacy-first**: data stays on device; no PII or health data is save, stored, or sent.
 - 🧭 **Friendly API**: Safe async calls, clear errors and logging, identity scoping.
 
 ## Requirements
