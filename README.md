@@ -302,3 +302,5 @@ public enum IdentityScope: Sendable, Equatable {
     case identities(Set<String>)
 }
 ```
+
+&copy; Immersion Neuroscience Inc. All rights reserved. By downloading or installing this SDK you are agreeing to the terms and conditions of use outlined at [Your6.com](https://your6.com) and [GetImmersion.com](https://getimmersion.com)
