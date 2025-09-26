@@ -15,8 +15,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "ImmersionKit",
-            url: "https://github.com/ImmersionNeuro/ImmersionKit/releases/download/v0.0.68/ImmersionKit.xcframework.zip",
-            checksum: "0ebc5d911623e9259d929bdd03b66b491e0e7a6c878fa7d83186d463dd15a481"
+            url: "https://github.com/ImmersionNeuro/ImmersionKit/releases/download/v0.0.69/ImmersionKit.xcframework.zip",
+            checksum: "8367d7da5bc70bcf36a9196792ec2dd2b3fea41c3ccfd0a738dd91141a6d7e37"
         )
     ]
 )
